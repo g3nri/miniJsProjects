@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopUp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button type="sumbit" class="btn" onclick="openPopup()">Sumbit</button>
+      <div class="popup" id="popup">
+        <img src="images/404.png" />
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully sumbitted. Thanks!</p>
+        <button type="button" onclick="closePopup()">Ok</button>
+        <script>
+          let popup = document.getElementById("popup");
+
+          function openPopup() {
+            popup.classList.add("open-popup");
+          }
+          function closePopup() {
+            popup.classList.remove("open-popup");
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
